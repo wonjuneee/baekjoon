@@ -14,7 +14,6 @@ int main(){
         int tmp;
         cin >> tmp;
         cable.push_back(tmp);
-        length += tmp;
     }
     unsigned int left = 1, right = 2147483647;
     while(left <= right){
