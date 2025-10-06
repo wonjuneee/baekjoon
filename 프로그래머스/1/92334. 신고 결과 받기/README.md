@@ -1,6 +1,6 @@
 # [level 1] 신고 결과 받기 - 92334 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/92334) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/92334?language=java) 
 
 ### 성능 요약
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2025년 10월 06일 21:15:27
+2025년 10월 06일 21:15:40
 
 ### 문제 설명
 

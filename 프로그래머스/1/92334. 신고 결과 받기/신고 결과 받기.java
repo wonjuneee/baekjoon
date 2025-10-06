@@ -33,8 +33,10 @@ class Solution {
             }
         }
         
-        // LinkedHashMap으로 순서가 보장되어 있으므로, 해당 values에 대해 mapToInt 후 toArray로 정답 형식 맞추기
-        int[] answer = receivedMailMap.values().stream().mapToInt(value -> value).toArray();
+        int[] answer = new int[id_list.length];
+        for (int i = 0; i < answer.length; i++) {
+            answer[i] = receivedMailMap.get(id_list[i]);
+        }
         return answer;
     }
 }
