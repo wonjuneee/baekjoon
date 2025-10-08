@@ -1,7 +1,4 @@
 class Solution {
-
-
-    
     public int solution(int n, int k) {
     
         long convertedNumber = 0, mul = 1;
@@ -12,13 +9,12 @@ class Solution {
         }
         
         String numberStr = String.valueOf(convertedNumber);
-        // System.out.println("numberStr: " + numberStr);
-        String[] primesStr = numberStr.split("0");
+        String[] betweenZeroStr = numberStr.split("0");
         
-        // System.out.println("소수후보 수: ");
         int answer = 0;
-        for (String str: primesStr) {
-            // System.out.println('-' + str);
+        for (String str: betweenZeroStr) {
+
+            // 00 이 존재할 경우 빈 문자열이 포함될 수 있으므로 필터링 필요
             if (str.equals("")) {
                 continue;
             }
@@ -27,8 +23,6 @@ class Solution {
                 answer++;
             }
         }
-        
-        
         
         return answer;
     }
